@@ -1,0 +1,140 @@
+*{  
+    box-sizing: border-box;
+    }
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --negro: #000000;
+}
+
+body{
+    font-family:  roboto;
+    background-color: #ebebeb
+}
+
+p{
+    font-size: 12px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount{
+    font-size: 16px;
+    color: var(--verde);
+}
+
+.description{
+    font-size: 16px;
+}
+
+header{
+    background-color: var(--amarillo);
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+div.top-header{
+    padding: 5%;
+
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color :#000
+}
+
+header .form .input{
+    background-color: var(--gris-claro);
+    border: 1px solid #000;
+    outline: none;
+    color: var(--gris-oscuro);
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: var(--gris-claro);
+    border: 1px solid #000;
+    color: var(--gris-oscuro);
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burguer-menu{
+    text-align: center;
+}
+
+div.burguer-menu i{
+    background-color: var(--azul);
+    border-radius: 5px;
+    color: var(--gris-claro);
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+Footer{
+    align-items: center;
+    text-align: center;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield{
+    font-size: 2cm;
+    margin-bottom: 10px;
+}
+
+main{
+    width: 90vw;
+}
+
+.image-product{
+    height: 100%;
+    width: 100%; 
+}
+.fa-truck{
+    color:#1ae743;
+    display:block;
+    border-radius: 50%;
+}
+
+.article{
+    width: 90vw;
+    margin: auto;
+    background-color: var(--gris-claro);
+    margin: 10px;
+}
+
+div.product-info{
+    margin-top: 1px solid --gris-claro;
+    padding: 15px;
+}
