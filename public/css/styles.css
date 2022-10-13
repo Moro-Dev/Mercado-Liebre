@@ -115,6 +115,7 @@ Footer{
 
 main{
     width: 90vw;
+    margin: 0 auto;
 }
 
 .image-product{
@@ -131,10 +132,15 @@ main{
     width: 90vw;
     margin: auto;
     background-color: var(--gris-claro);
-    margin: 10px;
+    margin-top: 10px;
 }
 
 div.product-info{
-    margin-top: 1px solid --gris-claro;
+    width: 100%;
+    border-top: 1px solid var(--gris-claro) ;
     padding: 15px;
+}
+
+.products{
+    background-color: white;
 }
