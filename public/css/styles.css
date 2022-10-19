@@ -1,6 +1,4 @@
 
-
-
 :root {
     --amarillo: #EAC926;
     --azul: #03264C;
@@ -20,13 +18,13 @@
 body {
     font-family: 'Roboto', sans-serif; 
     margin: 0;
-    background-color: rgb(224, 222, 222);
+    background-color: var(--gris-claro)
    
 }
 
 
 header {
-    background-color: #EAC926;
+    background-color: var(--amarillo)
     }
 
 .contenedor-logo-busqueda-cuotas{
@@ -85,7 +83,7 @@ h1 {
 }
 
 .fa-bars{
-    background-color: #03264C ;
+    background-color: var(--azul);
     font-size: 25px;
     color: white;
     border-radius:  10%;
@@ -112,7 +110,7 @@ footer {
     text-align: center;
     margin-top: 100px;
     padding: 40px;
-    background-color: #f5f4f4;
+    background-color: var(--gris-claro)
 }
 
 footer p {
@@ -131,13 +129,9 @@ footer p {
     }
 
 footer .fas {
-   color: #1a8be7;
+   color: var(--azul);
    font-size: 2em;
    margin-bottom: 10px;
-}
-
-footer .fas:hover {
-    color: rgb(204, 185, 12); 
 }
 
 
@@ -158,7 +152,7 @@ main {
 }
 
 .caja-info-producto {
-   border-top:1px solid #ebebeb;
+   border-top:1px solid var(--gris-claro);
    padding: 15px;
    position: relative; 
    }
@@ -166,7 +160,7 @@ main {
 
 
 .fa-truck {
-    color: rgb(75, 144, 7);
+    color: var(--verde);
     transition:  transform 1.5s; 
 }
 
@@ -177,7 +171,7 @@ main {
 
 
 .descuento {
-    color: rgb(75, 144, 7);
+    color: var(--verde);
     flex-grow: 0.7;
 }
 
@@ -194,8 +188,8 @@ main section article i {
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgb(75, 144, 7);
-    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--verde);
+    background-color: var(--gris-claro);
     border-radius: 50%;
     position: absolute; 
     right: 20px;
@@ -213,7 +207,7 @@ main section article:hover .descripcion {
 
 
 
-@media (min-width: 381px){
+@media (min-width: 426px){
 
     .contenedor-ultima-visita ,
     .contenedor-ofertas {
@@ -273,14 +267,37 @@ main section article:hover .descripcion {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 23%;
         justify-content: space-around;
-        margin: 1%; 
+        margin: 1%;
     }
-    
+
     .footer-contenedor {
         display: flex;  
         font-size: 14px;
         
     }
+    
+    .fa-user-shield,
+    .fa-gift,
+    .fa-credit-card {
+        transition: all 420ms;
+    }
+
+    .fa-user-shield:hover,
+    .fa-gift:hover,
+    .fa-credit-card:hover {
+        color: var(--amarillo);
+    }
+
+    /*footer .fas:hover{
+
+        transition: all 420ms;
+    }
+    
+    footer .fas:hover {
+        color: rgb(204, 185, 12); 
+    }*/
+    
+    
 }
 
 /*Login css*/
@@ -290,7 +307,6 @@ main section article:hover .descripcion {
     justify-content: center;
 }
 .estilos-form {
-    /*text-align: center;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +315,7 @@ main section article:hover .descripcion {
     padding: 30px;
     padding-bottom: 50px;
     max-width: 40%;
-    background-color: #f6f6f6;
+    background-color:var(--gris-claro)
 }
 
 .estilos-form h1 {
@@ -339,7 +355,7 @@ main section article:hover .descripcion {
     border-radius: 4px;
     border: none;
     box-shadow: 3px 3px 3px rgb(73, 72, 72);
-    background-color: #0078da;
+    background-color: var(--azul);
     transition: background-color 0.5s; 
     
 }
