@@ -22,7 +22,6 @@ app.get ('/register', (req, res)=>{
 });
 
 app.get('/crear-producto', (req, res) => {
-    res.sendFile(path.resolve('./views/crear-producto.html'))
+    res.sendFile(path.join(__dirname + '/views/crear-producto.html'));
 });
-
 
