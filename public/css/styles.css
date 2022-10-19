@@ -35,12 +35,12 @@ header {
 }
 
 .logo {
-    width: 20vw;
+    width: 40%;
     padding: 10px; 
 }
 
 .busqueda {
-    width: 20vw;
+    width: 32vw;
     height: 4vh;
     border: none;
     border-radius: 5px;
