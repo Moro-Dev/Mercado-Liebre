@@ -12,3 +12,16 @@ app.listen(APP_PORT, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'))
 });
+
+app.get ('/login', (req, res)=>{
+    res.sendFile(path.resolve ('./Views/login.html'))
+});
+
+app.get ('/register', (req, res)=>{
+    res.sendFile(path.resolve ('./Views/register.html'))
+});
+
+
+app.get('*', (req,res)=>{
+    res.send('¡la página que estás buscando, no se encuentra!')
+}); 
