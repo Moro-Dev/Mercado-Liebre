@@ -21,7 +21,4 @@ app.get ('/register', (req, res)=>{
     res.sendFile(path.resolve ('./Views/register.html'))
 });
 
-app.get('/crear-producto', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/crear-producto.html'));
-});
 
